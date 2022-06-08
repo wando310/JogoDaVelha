@@ -34,11 +34,9 @@ function reset(){ //Função que irá sempre resetar o jogo
     warning = ''; //Warning é zerado
 
     let random = Math.floor(Math.random() * 2); //Função aleatória 0 ou 1 - Irá sortear o jogador inicial
-    if(random === 0){
-        player = 'x';
-    } else{
-        player = 'o';
-    }
+    
+    random === 0 ? player = 'x' : 'o'
+    
     //Outra forma
     //player = (random === 0)? 'x' : 'o';
 
